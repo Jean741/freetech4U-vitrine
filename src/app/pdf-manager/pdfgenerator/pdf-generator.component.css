@@ -1,0 +1,59 @@
+#pdf-content{
+  width: 500px;
+  height: 550px;
+  padding: 3px;
+  margin: 10px auto;
+  background-color: #434242;
+  position: relative;
+  padding:10px;
+  color:#ffffff;
+}
+.border-image{
+  position: absolute;
+  width: 50px; /* Adjust the width and height based on your design */
+  height: 50px;
+}
+.top-left {
+  top: 5px;
+  left: 5px;
+}
+.top-right {
+  top: 5px;
+  right: 5px;
+}
+.bottom-left {
+  bottom: 5px;
+  left: 5px;
+}
+.bottom-right {
+  bottom: 5px;
+  right: 5px;
+}
+.header-title{
+  text-align: center;
+  margin: 5px 1px;
+  /*font-family: "Agency FB";*/
+}
+.main-code{
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+.promoteurs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.promoteur{
+  margin: 0px 6px;
+}
+.logos-principaux{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.logo{
+  height: 40px;
+  width: 100px;
+  margin: 0px 6px;
+}

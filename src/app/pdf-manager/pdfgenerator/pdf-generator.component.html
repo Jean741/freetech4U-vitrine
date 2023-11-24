@@ -1,0 +1,39 @@
+<div>
+  <!-- Your template content goes here -->
+  <h1>Hello, this is a PDF</h1>
+</div>
+<button (click)="generatePDF()">Generate PDF</button>
+
+
+<!-- login-form.component.html -->
+<div id="pdf-content">
+    <img src="assets/images/monwazapqrcode.png" class="border-image top-left"/>
+    <img src="assets/images/monwazapqrcode.png" class="border-image top-right"/>
+    <img src="assets/images/monwazapqrcode.png" class="border-image bottom-left"/>
+    <img src="assets/images/monwazapqrcode.png" class="border-image bottom-right"/>
+  <h3 class="header-title">Votre Ticket d'entrée </h3>
+  <h2 class="header-title">[Lieu de l'évenement] </h2>
+  <h5 class="header-title">[Date de l'évenement] </h5>
+  <div class="main-code">
+    <img src="assets/images/monwazapqrcode.png" />
+  </div>
+  <h6 class="header-title">Date de l'evenement </h6>
+  <div class="promoteurs">
+    <h6 class="promoteur"> [Promoteur 1] </h6>
+    <h6 class="promoteur"> [Promoteur 2] </h6>
+    <h6 class="promoteur"> [Promoteur 3] </h6>
+    <h6 class="promoteur"> [Promoteur 4] </h6>
+    <h6 class="promoteur"> [Promoteur 5] </h6>
+    <h6 class="promoteur"> [Promoteur 6] </h6>
+  </div>
+  <h5 class="header-title">[reference : 1012548] </h5>
+  <div class="logos-principaux">
+    <img src="assets/images/logo.jpg" class="logo"/>
+    <img src="assets/images/logo.jpg" class="logo"/>
+  </div>
+
+</div>
+
+<pdf-viewer [src]="pdfSrc" class="m-auto"
+            style="width: 850px; height: 950px"
+></pdf-viewer>
