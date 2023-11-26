@@ -5,6 +5,14 @@
 @import "~primeng/resources/primeng.css";
 @import "~primeicons/primeicons.css";
 /*@import "assets/css/generic-classes.css";*/
+:root {
+  --font-style: Roboto, 'Arial', sans-serif;
+  --orangeLogo: #FF6600;
+}
+
+body {
+  font-family: var(--font-style);
+}
 *, *::before, *::after{
   box-sizing: border-box;
 }
@@ -22,6 +30,27 @@ body {
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
   font-family: var(--font-family);
+ margin: 0;
+  height: 100%;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
-body { margin: 0;height: 100%; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e4e7ea;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #70afb561;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}

@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import {HTMLOptions, jsPDF, jsPDFOptions} from "jspdf";
+import {Component} from '@angular/core';
+import {jsPDF, jsPDFOptions} from "jspdf";
 
 @Component({
   selector: 'app-pdf-generator',
@@ -20,7 +19,6 @@ export class PdfGeneratorComponent {
       filters: ['ASCIIHexEncode'], // array of applied filters
       userUnit: 1.0, // scaling factor for the unit
       putOnlyUsedFonts: false, // only put fonts used in the document
-      //hotfixes: ['pxmldom', 'removefetch'],
       floatPrecision: 'smart', // 'smart' or a number for float precision
     };
     const pdf = new jsPDF(pdfOptions);
@@ -28,8 +26,6 @@ export class PdfGeneratorComponent {
     const options: any = {
       callback: (pdf:jsPDF) => {
        pdf.save('generated.pdf');
-       // const pdfDataUri = pdf.output('datauristring');
-       // this.pdfSrc=pdfDataUri;
       },
       margin: [10,10,10,10], // Set uniform margins (top, left, bottom, right)
       autoPaging: true,

@@ -1,7 +1,46 @@
-<!--header-->
-<div class="card">
-  <p-menubar [model]="items" ></p-menubar>
-</div>
+<div class="container-fluid full-page">
+  <!--header-->
+  <app-header> </app-header>
 
-<app-pdf-generator>
-</app-pdf-generator>
+  <!--  body-->
+
+  <!--  Image accueil-->
+  <div class="image-accueil">
+    <img  class="body-main-img" src="assets/images/image-accueil.jpg"/>
+    <div class="intro-text">
+      Peu importe votre  <br/>
+      aventure dans le monde  <br/>
+       du digital <b class="marked-text-intro">FreeTech For You</b><br/>
+      vous accompagne.
+    </div>
+  </div>
+  <div class="page-label-title pt-5">
+    <span>Nos Services</span>
+  </div>
+  <div class="row mt-2">
+    <img src="assets/images/pexels-photomix-company-518244.jpg"
+         class="image_apropos rounded img-fluid col-6" alt="...">
+    <div class="col-6">
+      Tout va bien
+    </div>
+<!--    <img src="assets/images/imageService.jpg"-->
+<!--         class="image_apropos1 rounded img-fluid col-12" alt="...">-->
+  </div>  <div class="row mt-2">
+
+    <div class="col-6">
+    </div>
+  <img src="assets/images/imageService.jpg"
+       class="image_apropos rounded img-fluid col-6" alt="...">
+<!--    <img src="assets/images/imageService.jpg"-->
+<!--         class="image_apropos1 rounded img-fluid col-12" alt="...">-->
+  </div>
+
+  <div class="page-label-title">
+    <span>Nos Valeurs</span>
+  </div>
+  <app-card-testimony>
+  </app-card-testimony>
+
+
+
+</div>

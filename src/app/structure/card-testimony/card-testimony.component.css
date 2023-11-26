@@ -1,0 +1,28 @@
+.main-testy{
+  width: 350px;
+  height: 400px;
+  color: #000000;
+  padding: 10px;
+  text-align: center;
+  font-family: "Inter", sans-serif, "Bauhaus 93";
+  margin: 2em;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.main-testy:hover{
+  /*background-color: #BF2A2B;*/
+  background-color: var(--orangeLogo);
+  position: inherit;
+  color: #ffffff;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);}
+
+.title-testy{
+  margin: 30px 0px;
+  font-size: 1.8em;
+}
+
+.content-testy{
+  margin: 46px 15px 15px 15px;
+  font-size: 1.3em;
+}

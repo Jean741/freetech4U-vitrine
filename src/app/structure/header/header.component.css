@@ -1,0 +1,60 @@
+.main-header{
+  background-color: #ffffff;
+  height:150px;
+  margin: 0px 0px;
+  padding: 50px 0px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.header-logo{
+  position: absolute;
+  height: 70px;
+  width: 220px;
+  margin: 0px 14rem;
+  top: 50px;
+  left:10px;
+}
+.menu-box{
+  /*background-color: #f8f7f7;*/
+  padding: 15px 0px;
+  margin: 0px 30px;
+  position: relative;
+  cursor: pointer;
+}
+.menu-title{
+  color: #353232;
+  font-family: "Agency FB";
+  font-size: 20px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.menu-title:hover{
+  color: var(--orangeLogo);
+}
+.sub-menu{
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  color: #353232;
+  font-weight: bolder;
+}
+.menu-box:hover .sub-menu{
+  display: block;
+}
+
+.sub-menu-item{
+  display: block;
+  width: 250px;
+  height:40px;
+  padding: 8px 3px;
+  border-bottom: 0.5px solid #e0dddd;
+}
+.sub-menu-item:hover{
+  background-color: #f9923f;;
+  color: white;
+  transition: color 0.5s ease;
+}
+
